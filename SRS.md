@@ -1,0 +1,101 @@
+# Software Requirements Specification (SRS) Document
+
+## 1. Introduction
+
+The agriculture dashboard application aims to provide farmers with a user-friendly and robust tool to manage their crop cultivation activities efficiently. Considering that farmers may often have dirty hands while using the app and may operate it outdoors, the UI design will prioritize well-placed buttons and a color scheme optimized for outdoor visibility. This document outlines the requirements for the development of the agriculture dashboard application.
+
+### 1.1 Purpose
+
+The purpose of this document is to define the functional and non-functional requirements of the agriculture dashboard application, keeping in mind the unique needs and environments of farmers. It serves as a guide for the development team and stakeholders to understand the scope and objectives of the project.
+
+### 1.2 Scope
+
+The agriculture dashboard application will include the following key features:
+- Onboarding with language preferences and crop selection.
+- Homepage with weather information, market prices, reminders, and crop-specific developments.
+- Chat room for farmers, calendar for task management, journal for data logging, insights and recommendations, and autopilot farming for automation.
+
+### 1.3 Definitions, Acronyms, and Abbreviations
+
+- SRS: Software Requirements Specification
+- NFRs: Non-Functional Requirements
+- UI: User Interface
+- IoT: Internet of Things
+
+## 2. Functional Requirements
+
+### 2.1 Onboarding
+1. Users shall be able to easily navigate the onboarding process, with large and clearly labeled buttons for selecting language preferences and crop types.
+2. Input fields for crop size shall be designed with larger touch targets to accommodate users with dirty hands.
+3. Get immideate information from user's locale and set languages straight away based on location.
+4. Have a app walk-through for all new users to ensure they are able to navigate and use features in the app effectively.
+
+### 2.2 Homepage
+1. The homepage shall feature prominently displayed weather information and market prices, with high contrast color themes for outdoor visibility.
+2. Buttons for todos and reminders shall be strategically placed for easy access, even with dirty hands.
+
+### 2.3 Chat Room
+1. The chat room interface shall prioritize legibility and ease of use, with well-spaced text and intuitive navigation.
+2. The chat room feature shall have minimal loading times to ensure real-time communication among farmers.
+
+### 2.4 Calendar
+1. The calendar shall have a clean and uncluttered layout, with color-coded task categories for easy identification outdoors.
+2. Task management buttons shall be placed at the bottom of the screen for easy access while holding a mobile device with dirty hands.
+
+### 2.5 Journal
+1. The journal interface shall be designed with large input fields and buttons for easy data entry, even with gloves or dirty hands.
+2. Data logging shall be seamless and intuitive, allowing farmers to quickly record daily activities such as rainfall and fertilizer amounts.
+
+### 2.6 Insights and Recommendations
+1. The insights and recommendations feature shall present information in a visually appealing format, with charts and graphs optimized for outdoor viewing.
+2. Recommendations shall be actionable and tailored to the specific needs of each farmer, taking into account crop type and environmental factors.
+3. The insights should be easily understandable and translated keeping the context and meaning intact in all languages to ensure effective communication to farmers.
+
+### 2.7 Autopilot Farming
+1. The autopilot farming feature shall have a user-friendly setup process, with clear instructions and minimal manual input required.
+2. Automation controls shall be easily accessible from the homepage, allowing farmers to monitor and adjust settings on the go.
+3. The autopilot farming assistant must inform the farmer the action/decision that it will take via email notification or WhatsApp message. Only after the user
+4. responds the assistant can go ahead with the decision to change farming parameters by communicating with the IoT devices
+
+## 3. Non-Functional Requirements (NFRs)
+
+### 3.1 Performance
+1. The application shall respond to user interactions within 2 seconds, even under poor network conditions.
+2. Chat room messages shall be delivered in real-time with minimal latency, ensuring seamless communication among farmers.
+
+### 3.2 Reliability
+1. The application shall have an uptime of at least 99%, with regular maintenance and updates to minimize downtime.
+2. Data loss shall be minimized through automatic backups and synchronization with cloud storage.
+3. The language must be simple and understandable as the major target audience are farmers and they may not have had access to scientific agricultural education.
+
+### 3.3 Usability
+1. The UI must be intuitive and easy to navigate, with clear visual cues and minimal text-based instructions.
+2. User interactions shall be optimized for touch screens, with large touch targets and gesture-based controls.
+3. Have many tootips to ensure user never feels helpless and can always find out what each feature does.
+
+### 3.4 Security
+1. User data shall be encrypted both in transit and at rest, with strict access controls to protect sensitive information.
+2. The application shall undergo regular security audits and penetration testing to identify and address potential vulnerabilities.
+
+### 3.5 Scalability
+1. The application shall support a growing user base without compromising performance, with scalable infrastructure and load balancing capabilities.
+2. Backend systems shall be designed to handle large volumes of data and user requests, with horizontal scaling options for future expansion.
+
+### 3.6 Data Quality and Volume
+1. The application shall require good quality and large volumes of data to ensure accuracy and reliability in machine learning models used for autopilot farming and disease detection.
+2. Data collection mechanisms shall be designed to capture a wide range of environmental and agronomic variables, ensuring robustness and generalizability of predictive models.
+
+## 4. Constraints
+
+- The application shall be compatible with modern web browsers (Chrome, Firefox, Safari) and mobile devices running iOS and Android operating systems.
+- Development shall adhere to budget and time constraints specified by stakeholders.
+
+## 5. Appendices
+
+### Appendix A: Glossary
+- Dashboard: The main interface of the application displaying relevant information and features.
+- Journal: A section where users log daily activities and observations related to crop cultivation.
+
+### Appendix B: References
+- SWEBOK (Software Engineering Body of Knowledge)
+- Lab Guides on Software Requirements Specification
