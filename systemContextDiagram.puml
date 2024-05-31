@@ -1,0 +1,28 @@
+@startuml
+actor Farmer
+actor ExternalSystem
+
+rectangle "Agriculture Dashboard App" {
+    rectangle "Frontend" {
+        [Dashboard UI]
+        [Chat Interface]
+        [Calendar Component]
+        [Journal Component]
+        [Insights Component]
+        [Autopilot Interface]
+    }
+
+    rectangle "Backend API" {
+        [Onboarding Controller]
+        [Chat Controller]
+        [Calendar Controller]
+        [Journal Controller]
+        [Insights Controller]
+        [Autopilot Controller]
+    }
+}
+
+Farmer --> Frontend
+Frontend --> BackendAPI
+BackendAPI --> ExternalSystem
+@enduml
