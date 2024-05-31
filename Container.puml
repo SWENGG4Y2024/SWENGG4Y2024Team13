@@ -1,0 +1,22 @@
+@startuml 
+actor Farmer 
+actor ExternalSystem 
+
+cloud ExternalSystem { 
+    [External Service] 
+} 
+
+package "Agriculture Dashboard App" { 
+    [Frontend: Single-Page Application] 
+    [Backend API: Node.js, Express] 
+} 
+
+database "Database" { 
+    [Database Schema] 
+} 
+
+Farmer --> [Frontend] 
+[Frontend] --> [Backend API]: REST API 
+[Backend API] --> [Database Schema]: SQL Queries 
+[Backend API] --> [External Service]: HTTP Requests 
+@enduml
