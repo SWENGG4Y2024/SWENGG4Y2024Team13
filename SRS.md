@@ -25,10 +25,11 @@ The agriculture dashboard application will include the following key features:
 ## 2. Functional Requirements
 
 ### 2.1 Onboarding
-1. Users shall be able to easily navigate the onboarding process, with large and clearly labeled buttons for selecting language preferences and crop types.
-2. Input fields for crop size shall be designed with larger touch targets to accommodate users with dirty hands.
-3. Get immideate information from user's locale and set languages straight away based on location.
-4. Have a app walk-through for all new users to ensure they are able to navigate and use features in the app effectively.
+1. Farmer must be able to easily navigate the onboarding process, with large and clearly labeled buttons for selecting language preferences and crop types.
+2. Input fields for crop size shall be designed with larger touch targets to accommodate farmers with dirty hands.
+3. Get immideate information from farmer's locale and set languages straight away based on location.
+4. Have a app walk-through for all new farmers to ensure they are able to navigate and use features in the app effectively.
+5. Agriculture researches may also use this application for their experiments on different genetically modified crop. 
 
 ### 2.2 Homepage
 1. The homepage shall feature prominently displayed weather information and market prices, with high contrast color themes for outdoor visibility.
