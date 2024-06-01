@@ -1,28 +1,40 @@
 @startuml
-actor Farmer
-actor ExternalSystem
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 
-rectangle "Agriculture Dashboard App" {
-    rectangle "Frontend" {
-        [Dashboard UI]
-        [Chat Interface]
-        [Calendar Component]
-        [Journal Component]
-        [Insights Component]
-        [Autopilot Interface]
-    }
-
-    rectangle "Backend API" {
-        [Onboarding Controller]
-        [Chat Controller]
-        [Calendar Controller]
-        [Journal Controller]
-        [Insights Controller]
-        [Autopilot Controller]
-    }
+' Define system boundary for Users
+System_Boundary(Users, "Farmers") {
+    Person(customer, "Farmers", "Primary users of the application")
 }
 
-Farmer --> Frontend
-Frontend --> BackendAPI
-BackendAPI --> ExternalSystem
+' Define system boundary for Application
+System_Boundary(Application, "Agriculture Dashboard") {
+    System(agriculture_dashboard, "Agriculture Dashboard", "Provides tools for crop management")
+}
+
+' Define system boundary for External Systems
+System_Boundary(ExternalSystems, "External Systems") {
+    
+    ' Define system boundary for Database Layer
+    System_Boundary(DatabaseLayer, "Database Layer") {
+        System_Ext(language_db, "Language Database", "Stores language preferences")
+        System_Ext(crop_db, "Crop Database", "Stores crop-related data")
+    }
+
+    ' Define system boundary for External APIs
+    System_Boundary(ExternalApis, "External APIs") {
+        System_Ext(weather_api, "Weather API", "Provides weather information")
+        System_Ext(market_api, "Market API", "Provides market prices")
+    }
+    
+    System_Ext(reminder_system, "Reminder System", "Manages reminders")
+    System_Ext(chat_system, "Chat System", "Enables communication among farmers")
+    System_Ext(calendar_system, "Calendar System", "Manages tasks and events")
+    System_Ext(journal_system, "Journal System", "Handles agriculture data logging")
+    System_Ext(insights_system, "Insights System", "Generates insights and recommendations")
+    System_Ext(autopilot_system, "Autopilot Farming Assistant", "Automates farming tasks")
+}
+
+' Define relationships
+Rel(customer, agriculture_dashboard, "Interacts with")
+Rel(agriculture_dashboard, ExternalSystems, "Accesses")
 @enduml
