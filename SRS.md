@@ -1,3 +1,30 @@
+## Table of Contents
+
+1. [Introduction](#1-introduction)
+   1. [Purpose](#11-purpose)
+   2. [Scope](#12-scope)
+   3. [Definitions, Acronyms, and Abbreviations](#13-definitions-acronyms-and-abbreviations)
+2. [Functional Requirements](#2-functional-requirements)
+   1. [Onboarding](#21-onboarding)
+   2. [Homepage](#22-homepage)
+   3. [Chat Room](#23-chat-room)
+   4. [Calendar](#24-calendar)
+   5. [Journal](#25-journal)
+   6. [Insights and Recommendations](#26-insights-and-recommendations)
+   7. [Autopilot Farming](#27-autopilot-farming)
+3. [Non-Functional Requirements (NFRs)](#3-non-functional-requirements-nfrs)
+   1. [Performance](#31-performance)
+   2. [Reliability](#32-reliability)
+   3. [Usability](#33-usability)
+   4. [Security](#34-security)
+   5. [Scalability](#35-scalability)
+   6. [Data Quality and Volume](#36-data-quality-and-volume)
+4. [Constraints](#4-constraints)
+5. [Appendices](#5-appendices)
+   1. [Appendix A: Glossary](#appendix-a-glossary)
+   2. [Appendix B: References](#appendix-b-references)
+
+
 # Software Requirements Specification (SRS) Document
 
 ## 1. Introduction
