@@ -12,6 +12,7 @@
    5. [Journal](#25-journal)
    6. [Insights and Recommendations](#26-insights-and-recommendations)
    7. [Autopilot Farming](#27-autopilot-farming)
+   8. [Connectivity Management and Offline Functionality](#28-connectivity-management-and-offline-functionality)
 3. [Cross Reference Matrix](#3-cross-reference-matrix)
 4. [Operating Environment](#4-operating-environment)
    1. [Hardware Requirements](#1-hardware-requirements)
@@ -86,11 +87,18 @@ The agriculture dashboard application will include the following key features:
 2. Recommendations shall be actionable and tailored to the specific needs of each farmer, taking into account crop type and environmental factors.
 3. The insights should be easily understandable and translated keeping the context and meaning intact in all languages to ensure effective communication to farmers.
 
-### 2.7 Autopilot Farming
+### 2.7 Autopilot Farming Assistant
 1. The autopilot farming feature shall have a user-friendly setup process, with clear instructions and minimal manual input required.
 2. Automation controls shall be easily accessible from the homepage, allowing farmers to monitor and adjust settings on the go.
 3. The autopilot farming assistant must inform the farmer the action/decision that it will take via email notification or WhatsApp message. Only after the user
 4. responds the assistant can go ahead with the decision to change farming parameters by communicating with the IoT devices
+
+### 2.8 Connectivity Management and Offline Functionality
+1. The majority of users using our application will be farmers. Farmers may have limited access to the internet.
+2. **Offline Data Storage:** The application allows farmers to add journal logs for up to 5 days when there is no internet connectivity. Local storage capabilities of modern web browsers or mobile operating systems are utilized for storing data locally on the user's device.
+3. **Background Synchronization:** Background synchronization tasks, such as service workers or mobile background tasks, periodically check for internet connectivity. When a connection is available, local data is synchronized with the server to ensure data consistency across devices.
+4. **Dynamic Calendar Rendering:** The application dynamically renders the next three days of action items in the calendar page, irrespective of internet connectivity. This feature is enabled through efficient data caching and predictive analysis of scheduled tasks.
+5. **Automatic Data Push to Servers:** Upon re-establishing an internet connection, the application automatically pushes locally stored journal logs to the data servers for centralized storage. This synchronization process ensures data consistency and integrity across the agricultural community.
 
 ## 3. Cross-Reference Matrix
 
