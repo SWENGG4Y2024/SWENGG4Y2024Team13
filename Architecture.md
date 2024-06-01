@@ -1,3 +1,38 @@
+# Architecture
+
+# Table of Contents
+
+1. [System Context Diagram](#system-context-diagram)
+    - [Actors](#actors)
+    - [Components](#components)
+    - [Relationships](#relationships)
+    - [Explanation](#explanation)
+
+2. [Container Diagram](#container-diagram)
+    - [Actors](#actors)
+    - [Components](#components)
+    - [Relationships](#relationships)
+    - [Explanation](#explanation)
+
+3. [Component Diagram](#component-diagram)
+    - [Frontend Components](#frontend-components)
+        - [Dashboard UI Component](#dashboard-ui-component)
+        - [Chat Interface Component](#chat-interface-component)
+        - [Calendar Component](#calendar-component)
+        - [Journal Component](#journal-component)
+        - [Insights Component](#insights-component)
+        - [Autopilot Interface Component](#autopilot-interface-component)
+
+4. [Backend API Components](#backend-api-components)
+    - [Onboarding Controller](#onboarding-controller)
+    - [Chat Controller](#chat-controller)
+    - [Calendar Controller](#calendar-controller)
+    - [Journal Controller](#journal-controller)
+    - [Insights Controller](#insights-controller)
+    - [Autopilot Controller](#autopilot-controller)
+
+5. [Code Diagram](#code-diagram)
+
 # System Context Diagram
 
 ![System Context Diagram](https://github.com/SWENGG4Y2024/SWENGG4Y2024Team13/assets/79200513/71a124d3-3703-4da2-9863-e024ba13fe79)
