@@ -3,13 +3,13 @@
 ## Onboarding:
 
 ### User Information and Preferences
-- User enables access to their location.
-- User enables access to their camera.
-- User selects preferred language during initial setup.
+- Farmer enables access to their location.
+- Farmer enables access to their camera.
+- Farmer selects preferred language during initial setup.
 
 ### Crop Selection and Size Input
-- User specifies the crop they are growing.
-- User inputs the size of the crop they are cultivating.
+- Farmer specifies the crop they are growing.
+- Farmer inputs the size of the crop they are cultivating.
 
 ## Guide The User Page (Homepage):
 
