@@ -90,19 +90,19 @@ The agriculture dashboard application will include the following key features:
 
 | Requirement              | Farmers | Agricultural Experts | Regulatory Authorities | Developers |
 |--------------------------|---------|----------------------|------------------------|------------|
-| 2.1 Onboarding           |    X    |                      |                        |      X     |
+| 2.1 Onboarding           |    X    |                      |            X           |      X     |
 | 2.2 Homepage             |    X    |                      |                        |      X     |
 | 2.3 Chat Room            |    X    |                      |                        |      X     |
-| 2.4 Calendar             |    X    |                      |                        |      X     |
-| 2.5 Journal              |    X    |                      |                        |      X     |
-| 2.6 Insights and Recommendations |    X    |          X           |                        |      X     |
-| 2.7 Autopilot Farming    |    X    |          X           |                        |      X     |
-| 3.1 Performance          |    X    |                      |                        |      X     |
-| 3.2 Reliability          |    X    |          X           |                        |      X     |
-| 3.3 Usability            |    X    |          X           |                        |      X     |
+| 2.4 Calendar             |    X    |                      |            X           |      X     |
+| 2.5 Journal              |    X    |                      |            X           |      X     |
+| 2.6 Insights and Recommendations |    X    |          X           |    X                   |      X     |
+| 2.7 Autopilot Farming    |    X    |          X           |            X           |      X     |
+| 3.1 Performance          |    X    |                      |            X           |      X     |
+| 3.2 Reliability          |    X    |          X           |            X           |      X     |
+| 3.3 Usability            |    X    |          X           |            X           |      X     |
 | 3.4 Security             |    X    |          X           |            X           |      X     |
 | 3.5 Scalability          |    X    |          X           |                        |      X     |
-| 3.6 Data Quality and Volume |    X    |          X           |                        |      X     |
+| 3.6 Data Quality and Volume |    X    |          X           |           X             |      X     |
 
 
 ## 4. Non-Functional Requirements (NFRs)
