@@ -1,7 +1,7 @@
 ### Stakeholders
 
 #### Farmers
-- **Description**: Primary users of the application who will interact with the platform to manage their crops, access relevant information, and receive recommendations.
+- **Description**: Primary users of the application will be farmers who will interact with the platform to manage their crops, access relevant information, and receive recommendations.
 - **Role**: Provide feedback on usability, suggest additional features, and rely on the app for effective crop management.
 - **Interest**: User-friendly interface, accurate and timely information, personalized recommendations.
 - **Expectations**: Seamless navigation, reliable data, and actionable insights to optimize crop yield and profitability.
