@@ -12,7 +12,7 @@
 - **Interest**: Accurate data representation, robust analytics, and alignment with agricultural standards and protocols.
 - **Expectations**: Scientifically sound recommendations, relevant research integration, and collaboration opportunities for knowledge exchange.
 
-#### Regulatory Authorities
+#### Regulatory Authorities (Ministry of Agriculture & Farmers Welfare)
 - **Description**: Government bodies or agencies responsible for agricultural regulations and standards.
 - **Role**: Compliance with relevant regulations may impact certain features or functionalities of the application.
 - **Interest**: Data privacy and security compliance, adherence to industry standards, and traceability of agricultural practices.
