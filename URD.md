@@ -12,23 +12,16 @@
    - [Current Market Price](#current-market-price)
    - [Reminder for Journal Entry](#reminder-for-journal-entry)
 
-3. [Operating Environment:](#operating-environment)
+3. [Features on Separate Pages:](#features-on-separate-pages)
    1. [Chat Room](#1-chat-room)
    2. [Calendar](#2-calendar)
    3. [Journal](#3-journal)
    4. [Insights and Recommendations](#4-insights-and-recommendations)
    5. [Autopilot Farming](#5-autopilot-farming)
       
-4. [Features on Separate Pages:](#features-on-separate-pages)
-   1. [Hardware Requirements](#1-hardware-requirements)
-   2. [Software Requirements](#2-software-requirements)
-   3. [Network Requirements](#3-network-requirements)
-   4. [External Integrations](#4-external-integrations)
-   5. [Deployment Considerations](#5-deployment-considerations)
-      
-5. [Software Reviews:](#software-reviews)
-6. [Simulation and Prototyping:](#simulation-and-prototyping)
-7. [Measures for Software Assessment:](#measures-for-software-assessment)
+4. [Software Reviews:](#software-reviews)
+5. [Simulation and Prototyping:](#simulation-and-prototyping)
+6. [Measures for Software Assessment:](#measures-for-software-assessment)
    - [Function-based (Structured) Design Measures:](#function-based-structured-design-measures)
      1. [Analyzing Functional Decomposition:](#analyzing-functional-decomposition)
      2. [Measuring Module Size, Complexity Metrics, Coupling, Cohesion, and Hierarchical Depth:](#measuring-module-size-complexity-metrics-coupling-cohesion-and-hierarchical-depth)
@@ -86,58 +79,6 @@
 - Automatically updates the journal daily and optimally plans activities based on weather forecasts.
 - Makes intelligent decisions based on journal values and recommendations.
 - Utilizes machine learning models in the background.
-
-## Operating Environment
-
-The agriculture dashboard application is designed to operate within a specified environment to ensure optimal performance, reliability, and compatibility. The following operating environment details outline the hardware, software, and network requirements for deploying and running the application effectively:
-
-### 1. Hardware Requirements
-
-- **Client Devices:** Users can access the agriculture dashboard application through various client devices, including desktop computers, laptops, smartphones, and tablets.
-  - **Minimum Requirements:** 
-    - Desktop or laptop with modern web browser (Chrome, Firefox, Safari)
-    - Mobile device running iOS or Android operating system
-
-### 2. Software Requirements
-
-- **Client-Side Software:**
-  - **Web Application:** The agriculture dashboard web application is compatible with modern web browsers such as Chrome, Firefox, and Safari.
-    - **Minimum Version:** Latest stable release of supported browsers (Chrome 90, Firefox 88, Safari 14)
-  - **Mobile Application:** For users accessing the application on mobile devices, the mobile app is compatible with iOS and Android platforms.
-    - **Minimum Version:** Compatible with the latest two versions of iOS and Android operating systems
-      - iOS: iOS 14 and iOS 15
-      - Android: Android 10 (Q) and Android 11 (R)
-
-- **Server-Side Software:**
-  - **Node.js Environment:** The server-side components of the application, including the API Gateway and various services, require Node.js runtime environment for execution.
-    - **Minimum Version:** Node.js 14.x or later
-  - **Database Systems:** The application utilizes database management systems for storing user data, content metadata, and logs.
-    - **Supported Databases:** MySQL, MongoDB, PostgreSQL
-    - **Minimum Version:** Latest stable release of supported databases
-
-### 3. Network Requirements
-
-- **Internet Connectivity:** Users require stable and high-speed internet connectivity to access and interact with the agriculture dashboard application seamlessly.
-  - **Minimum Bandwidth:** 
-    - Download Speed: 5 Mbps or higher
-    - Upload Speed: 2 Mbps or higher
-- **Network Security:** The application employs secure communication protocols (HTTPS) to ensure data integrity and confidentiality during transmission over the network.
-  - **Firewall Configuration:** Ports used by the application must be open to allow inbound and outbound traffic for API communication and data exchange.
-
-### 4. External Integrations
-
-- **Third-Party APIs:** The agriculture dashboard application integrates with external services such as weather APIs, market APIs, email services, and WhatsApp services for fetching data, sending notifications, and enhancing functionality.
-  - **Authentication:** Access to third-party APIs requires valid authentication credentials (API keys, access tokens) configured securely within the application environment.
-
-### 5. Deployment Considerations
-
-- **Cloud Hosting:** The application can be deployed on cloud platforms such as AWS, Google Cloud Platform, or Microsoft Azure to leverage scalability, reliability, and management services provided by cloud providers.
-- **Containerization:** Utilizing containerization technologies (e.g., Docker, Kubernetes) facilitates deployment and management of application components in isolated and portable containers.
-- **Continuous Integration/Continuous Deployment (CI/CD):** Implementing CI/CD pipelines automates the process of building, testing, and deploying application updates, ensuring efficient and reliable software delivery.
-
-The agriculture dashboard application operates within the specified environment, meeting hardware, software, and network requirements to deliver a seamless user experience and facilitate efficient crop cultivation management for farmers.
-
-
 ## Software Reviews:
 - Architecture reviews
 - Design reviews
