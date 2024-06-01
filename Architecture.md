@@ -35,7 +35,7 @@
 
 # System Context Diagram
 
-![System Context Diagram](https://github.com/SWENGG4Y2024/SWENGG4Y2024Team13/assets/79200513/71a124d3-3703-4da2-9863-e024ba13fe79)
+![Context](https://github.com/SWENGG4Y2024/SWENGG4Y2024Team13/assets/79200513/3bd9923e-15c9-436b-af74-cc541a964b89)
 
 The system context diagram provides an overview of the architecture of the agriculture dashboard application, depicting its interactions with external actors and systems. Let's break down the diagram and explain it in detail with respect to the application context:
 
@@ -73,7 +73,7 @@ Overall, the system context diagram provides a high-level view of the architectu
 
 # Container Diagram
 
-![Container Diagram](https://github.com/SWENGG4Y2024/SWENGG4Y2024Team13/assets/79200513/99e5d317-f9ef-4ba2-b26a-69901f6a1783)
+![Container](https://github.com/SWENGG4Y2024/SWENGG4Y2024Team13/assets/79200513/6c4c69fa-7ddb-40e4-a6b8-78d21469653c)
 
 The container diagram provides a high-level overview of the architecture of the agriculture dashboard application, focusing on the major technology components and their interactions. Let's break down the diagram and explain it in detail with respect to the application context:
 
