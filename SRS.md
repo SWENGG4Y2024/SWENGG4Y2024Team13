@@ -85,6 +85,25 @@ The agriculture dashboard application will include the following key features:
 3. The autopilot farming assistant must inform the farmer the action/decision that it will take via email notification or WhatsApp message. Only after the user
 4. responds the assistant can go ahead with the decision to change farming parameters by communicating with the IoT devices
 
+## Cross-Reference Matrix
+
+| Requirement              | Farmers | Agricultural Experts | Regulatory Authorities | Developers |
+|--------------------------|---------|----------------------|------------------------|------------|
+| 2.1 Onboarding           |    X    |                      |                        |      X     |
+| 2.2 Homepage             |    X    |                      |                        |      X     |
+| 2.3 Chat Room            |    X    |                      |                        |      X     |
+| 2.4 Calendar             |    X    |                      |                        |      X     |
+| 2.5 Journal              |    X    |                      |                        |      X     |
+| 2.6 Insights and Recommendations |    X    |          X           |                        |      X     |
+| 2.7 Autopilot Farming    |    X    |          X           |                        |      X     |
+| 3.1 Performance          |    X    |                      |                        |      X     |
+| 3.2 Reliability          |    X    |          X           |                        |      X     |
+| 3.3 Usability            |    X    |          X           |                        |      X     |
+| 3.4 Security             |    X    |          X           |            X           |      X     |
+| 3.5 Scalability          |    X    |          X           |                        |      X     |
+| 3.6 Data Quality and Volume |    X    |          X           |                        |      X     |
+
+
 ## 3. Non-Functional Requirements (NFRs)
 
 ### 3.1 Performance
