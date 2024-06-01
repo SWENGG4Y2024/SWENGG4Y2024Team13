@@ -13,15 +13,21 @@
    6. [Insights and Recommendations](#26-insights-and-recommendations)
    7. [Autopilot Farming](#27-autopilot-farming)
 3. [Cross Reference Matrix](#3-cross-reference-matrix)
-4. [Non-Functional Requirements (NFRs)](#4-non-functional-requirements-nfrs)
+4. [Operating Environment](#4-operating-environment)
+   1. [Hardware Requirements](#1-hardware-requirements)
+   2. [Software Requirements](#2-software-requirements)
+   3. [Network Requirements](#3-network-requirements)
+   4. [External Integrations](#4-external-integrations)
+   5. [Deployment Considerations](#5-deployment-considerations)
+6. [Non-Functional Requirements (NFRs)](#4-non-functional-requirements-nfrs)
    1. [Performance](#41-performance)
    2. [Reliability](#42-reliability)
    3. [Usability](#43-usability)
    4. [Security](#44-security)
    5. [Scalability](#45-scalability)
    6. [Data Quality and Volume](#46-data-quality-and-volume)
-5. [Constraints](#5-constraints)
-6. [Appendices](#6-appendices)
+7. [Constraints](#5-constraints)
+8. [Appendices](#6-appendices)
    1. [Appendix A: Glossary](#appendix-a-glossary)
    2. [Appendix B: References](#appendix-b-references)
 
@@ -104,41 +110,90 @@ The agriculture dashboard application will include the following key features:
 | 3.5 Scalability          |    X    |          X           |                        |      X     |
 | 3.6 Data Quality and Volume |    X    |          X           |           X             |      X     |
 
+## 4. Operating Environment
 
-## 4. Non-Functional Requirements (NFRs)
+The agriculture dashboard application is designed to operate within a specified environment to ensure optimal performance, reliability, and compatibility. The following operating environment details outline the hardware, software, and network requirements for deploying and running the application effectively:
 
-### 4.1 Performance
+### 4.1 Hardware Requirements
+
+- **Client Devices:** Users can access the agriculture dashboard application through various client devices, including desktop computers, laptops, smartphones, and tablets.
+  - **Minimum Requirements:** 
+    - Desktop or laptop with modern web browser (Chrome, Firefox, Safari)
+    - Mobile device running iOS or Android operating system
+
+### 4.2 Software Requirements
+
+- **Client-Side Software:**
+  - **Web Application:** The agriculture dashboard web application is compatible with modern web browsers such as Chrome, Firefox, and Safari.
+    - **Minimum Version:** Latest stable release of supported browsers (Chrome 90, Firefox 88, Safari 14)
+  - **Mobile Application:** For users accessing the application on mobile devices, the mobile app is compatible with iOS and Android platforms.
+    - **Minimum Version:** Compatible with the latest two versions of iOS and Android operating systems
+      - iOS: iOS 14 and iOS 15
+      - Android: Android 10 (Q) and Android 11 (R)
+
+- **Server-Side Software:**
+  - **Node.js Environment:** The server-side components of the application, including the API Gateway and various services, require Node.js runtime environment for execution.
+    - **Minimum Version:** Node.js 14.x or later
+  - **Database Systems:** The application utilizes database management systems for storing user data, content metadata, and logs.
+    - **Supported Databases:** MySQL, MongoDB, PostgreSQL
+    - **Minimum Version:** Latest stable release of supported databases
+
+### 4.3 Network Requirements
+
+- **Internet Connectivity:** Users require stable and high-speed internet connectivity to access and interact with the agriculture dashboard application seamlessly.
+  - **Minimum Bandwidth:** 
+    - Download Speed: 5 Mbps or higher
+    - Upload Speed: 2 Mbps or higher
+- **Network Security:** The application employs secure communication protocols (HTTPS) to ensure data integrity and confidentiality during transmission over the network.
+  - **Firewall Configuration:** Ports used by the application must be open to allow inbound and outbound traffic for API communication and data exchange.
+
+### 4.4 External Integrations
+
+- **Third-Party APIs:** The agriculture dashboard application integrates with external services such as weather APIs, market APIs, email services, and WhatsApp services for fetching data, sending notifications, and enhancing functionality.
+  - **Authentication:** Access to third-party APIs requires valid authentication credentials (API keys, access tokens) configured securely within the application environment.
+
+### 4.5 Deployment Considerations
+
+- **Cloud Hosting:** The application can be deployed on cloud platforms such as AWS, Google Cloud Platform, or Microsoft Azure to leverage scalability, reliability, and management services provided by cloud providers.
+- **Containerization:** Utilizing containerization technologies (e.g., Docker, Kubernetes) facilitates deployment and management of application components in isolated and portable containers.
+- **Continuous Integration/Continuous Deployment (CI/CD):** Implementing CI/CD pipelines automates the process of building, testing, and deploying application updates, ensuring efficient and reliable software delivery.
+
+The agriculture dashboard application operates within the specified environment, meeting hardware, software, and network requirements to deliver a seamless user experience and facilitate efficient crop cultivation management for farmers.
+
+## 5. Non-Functional Requirements (NFRs)
+
+### 5.1 Performance
 1. The application shall respond to user interactions within 2 seconds, even under poor network conditions.
 2. Chat room messages shall be delivered in real-time with minimal latency, ensuring seamless communication among farmers.
 
-### 4.2 Reliability
+### 5.2 Reliability
 1. The application shall have an uptime of at least 99%, with regular maintenance and updates to minimize downtime.
 2. Data loss shall be minimized through automatic backups and synchronization with cloud storage.
 3. The language must be simple and understandable as the major target audience are farmers and they may not have had access to scientific agricultural education.
 
-### 4.3 Usability
+### 5.3 Usability
 1. The UI must be intuitive and easy to navigate, with clear visual cues and minimal text-based instructions.
 2. User interactions shall be optimized for touch screens, with large touch targets and gesture-based controls.
 3. Have many tootips to ensure user never feels helpless and can always find out what each feature does.
 
-### 4.4 Security
+### 5.4 Security
 1. User data shall be encrypted both in transit and at rest, with strict access controls to protect sensitive information.
 2. The application shall undergo regular security audits and penetration testing to identify and address potential vulnerabilities.
 
-### 4.5 Scalability
+### 5.5 Scalability
 1. The application shall support a growing user base without compromising performance, with scalable infrastructure and load balancing capabilities.
 2. Backend systems shall be designed to handle large volumes of data and user requests, with horizontal scaling options for future expansion.
 
-### 4.6 Data Quality and Volume
+### 5.6 Data Quality and Volume
 1. The application shall require good quality and large volumes of data to ensure accuracy and reliability in machine learning models used for autopilot farming and disease detection.
 2. Data collection mechanisms shall be designed to capture a wide range of environmental and agronomic variables, ensuring robustness and generalizability of predictive models.
 
-## 5. Constraints
+## 6. Constraints
 
 - The application shall be compatible with modern web browsers (Chrome, Firefox, Safari) and mobile devices running iOS and Android operating systems.
 - Development shall adhere to budget and time constraints specified by stakeholders.
 
-## 6. Appendices
+## 7. Appendices
 
 ### Appendix A: Glossary
 - Dashboard: The main interface of the application displaying relevant information and features.
