@@ -1,5 +1,6 @@
 ### Stakeholders
 
+### End Users
 #### Farmers
 - **Description**: Primary users of the application will be farmers who will interact with the platform to manage their crops, access relevant information, and receive recommendations.
 - **Role**: Provide feedback on usability, suggest additional features, and rely on the app for effective crop management.
@@ -18,6 +19,7 @@
 - **Interest**: Data privacy and security compliance, adherence to industry standards, and traceability of agricultural practices.
 - **Expectations**: Transparent data handling practices, audit trails, and regulatory reporting capabilities.
 
+#### Internal Stakeholders
 #### Developers
 - **Description**: The team responsible for designing, developing, and maintaining the application.
 - **Role**: Translate user requirements into technical specifications, implement features, and ensure the stability and security of the app.
