@@ -1,22 +1,49 @@
-@startuml 
-actor Farmer 
-actor ExternalSystem 
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
-cloud ExternalSystem { 
-    [External Service] 
-} 
+'LAYOUT_TOP_DOWN
 
-package "Agriculture Dashboard App" { 
-    [Frontend: Single-Page Application] 
-    [Backend API: Node.js, Express] 
-} 
+title Agriculture Dashboard Container Diagram
 
-database "Database" { 
-    [Database Schema] 
-} 
+' Define system boundary for Users
+System_Boundary(Users, "Farmers") {
+    Person(customer, "Farmers", "Primary users of the application")
+}
 
-Farmer --> [Frontend] 
-[Frontend] --> [Backend API]: REST API 
-[Backend API] --> [Database Schema]: SQL Queries 
-[Backend API] --> [External Service]: HTTP Requests 
+' Define system boundary for Application
+System_Boundary(Application, "Agriculture Dashboard") {
+    Container(web_app, "Web Application", "React.js, Vue.js", "Client-side application for user interaction")
+    Container(api_gateway, "API Gateway", "Node.js, Express.js", "Gateway for handling client requests")
+    Container(user_service, "User Service", "Node.js, Express.js", "Handles user authentication and management")
+    Container(content_service, "Content Service", "Node.js, Express.js", "Manages content delivery and retrieval")
+    Container(analysis_service, "Analysis Service", "Python, TensorFlow", "Performs data analysis and generates insights")
+    Container(autopilot_service, "Autopilot Service", "Python, MQTT", "Controls automated farming tasks")
+    Container(iot_devices, "IoT Devices", "Sensors, Actuators", "Hardware devices for farming automation")
+}
+
+' Define system boundary for External Systems
+System_Boundary(ExternalSystems, "External Systems") {
+    Container(user_dbms, "User Database", "MySQL, MongoDB", "Stores user profiles and preferences")
+    Container(content_dbms, "Content Database", "PostgreSQL", "Stores content metadata and logs")
+    Container(weather_api, "Weather API", "OpenWeatherMap API", "Provides weather data for analysis")
+    Container(market_api, "Market API", "External Market API", "Fetches market prices for analysis")
+    Container(email_service, "Email Service", "SMTP, Email API", "Sends email notifications to farmers")
+    Container(whatsapp_service, "WhatsApp Service", "Twilio API, WhatsApp API", "Sends WhatsApp messages to farmers")
+}
+
+' Define relationships
+Rel(customer, web_app, "Interacts with")
+Rel(web_app, api_gateway, "Sends requests to")
+Rel(api_gateway, user_service, "For user authentication and management")
+Rel(api_gateway, content_service, "For content delivery and retrieval")
+Rel(content_service, content_dbms, "Reads content metadata from")
+Rel(analysis_service, content_dbms, "Accesses content logs for analysis")
+Rel(analysis_service, user_dbms, "Fetches user preferences for analysis")
+Rel(autopilot_service, content_service, "Controls farming automation tasks")
+Rel(autopilot_service, weather_api, "Fetches weather data for automation")
+Rel(autopilot_service, market_api, "Fetches market data for decision-making")
+Rel(autopilot_service, iot_devices, "Controls IoT devices for farming automation")
+Rel(autopilot_service, email_service, "Sends email notifications to farmers")
+Rel(autopilot_service, whatsapp_service, "Sends WhatsApp messages to farmers")
+
 @enduml
