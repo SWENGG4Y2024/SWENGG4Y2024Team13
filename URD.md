@@ -1,5 +1,38 @@
 # User Requirements Document
 
+## Table of Contents
+
+1. [Onboarding:](#onboarding)
+   - [User Information and Preferences](#user-information-and-preferences)
+   - [Crop Selection and Size Input](#crop-selection-and-size-input)
+
+2. [Guide The User Page (Homepage):](#guide-the-user-page-homepage)
+   - [Today's Todos and Weather](#todays-todos-and-weather)
+   - [Latest Developments](#latest-developments)
+   - [Current Market Price](#current-market-price)
+   - [Reminder for Journal Entry](#reminder-for-journal-entry)
+
+3. [Features on Separate Pages:](#features-on-separate-pages)
+   1. [Chat Room](#1-chat-room)
+   2. [Calendar](#2-calendar)
+   3. [Journal](#3-journal)
+   4. [Insights and Recommendations](#4-insights-and-recommendations)
+   5. [Autopilot Farming](#5-autopilot-farming)
+
+4. [Software Reviews:](#software-reviews)
+5. [Simulation and Prototyping:](#simulation-and-prototyping)
+6. [Measures for Software Assessment:](#measures-for-software-assessment)
+   - [Function-based (Structured) Design Measures:](#function-based-structured-design-measures)
+     1. [Analyzing Functional Decomposition:](#analyzing-functional-decomposition)
+     2. [Measuring Module Size, Complexity Metrics, Coupling, Cohesion, and Hierarchical Depth:](#measuring-module-size-complexity-metrics-coupling-cohesion-and-hierarchical-depth)
+     3. [Insights into Overall Structure and Organization:](#insights-into-overall-structure-and-organization)
+     4. [Understanding Interactions Between Features:](#understanding-interactions-between-features)
+   - [Object-oriented Design Measures:](#object-oriented-design-measures)
+     1. [Beneficial for Object-oriented Approach:](#beneficial-for-object-oriented-approach)
+     2. [Visual Representation with Class Diagrams:](#visual-representation-with-class-diagrams)
+     3. [Measuring Class Size, Coupling, Inheritance Hierarchy, and Cohesion:](#measuring-class-size-coupling-inheritance-hierarchy-and-cohesion)
+     4. [Understanding Encapsulation, Inheritance, and Polymorphism:](#understanding-encapsulation-inheritance-and-polymorphism)
+
 ## Onboarding:
 
 ### User Information and Preferences
