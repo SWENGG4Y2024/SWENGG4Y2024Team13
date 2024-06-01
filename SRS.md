@@ -12,15 +12,16 @@
    5. [Journal](#25-journal)
    6. [Insights and Recommendations](#26-insights-and-recommendations)
    7. [Autopilot Farming](#27-autopilot-farming)
-3. [Non-Functional Requirements (NFRs)](#3-non-functional-requirements-nfrs)
-   1. [Performance](#31-performance)
-   2. [Reliability](#32-reliability)
-   3. [Usability](#33-usability)
-   4. [Security](#34-security)
-   5. [Scalability](#35-scalability)
-   6. [Data Quality and Volume](#36-data-quality-and-volume)
-4. [Constraints](#4-constraints)
-5. [Appendices](#5-appendices)
+3. [Cross Reference Matrix](#3-cross-reference-matrix)
+4. [Non-Functional Requirements (NFRs)](#4-non-functional-requirements-nfrs)
+   1. [Performance](#41-performance)
+   2. [Reliability](#42-reliability)
+   3. [Usability](#43-usability)
+   4. [Security](#44-security)
+   5. [Scalability](#45-scalability)
+   6. [Data Quality and Volume](#46-data-quality-and-volume)
+5. [Constraints](#5-constraints)
+6. [Appendices](#6-appendices)
    1. [Appendix A: Glossary](#appendix-a-glossary)
    2. [Appendix B: References](#appendix-b-references)
 
@@ -85,7 +86,7 @@ The agriculture dashboard application will include the following key features:
 3. The autopilot farming assistant must inform the farmer the action/decision that it will take via email notification or WhatsApp message. Only after the user
 4. responds the assistant can go ahead with the decision to change farming parameters by communicating with the IoT devices
 
-## Cross-Reference Matrix
+## 3. Cross-Reference Matrix
 
 | Requirement              | Farmers | Agricultural Experts | Regulatory Authorities | Developers |
 |--------------------------|---------|----------------------|------------------------|------------|
@@ -104,40 +105,40 @@ The agriculture dashboard application will include the following key features:
 | 3.6 Data Quality and Volume |    X    |          X           |                        |      X     |
 
 
-## 3. Non-Functional Requirements (NFRs)
+## 4. Non-Functional Requirements (NFRs)
 
-### 3.1 Performance
+### 4.1 Performance
 1. The application shall respond to user interactions within 2 seconds, even under poor network conditions.
 2. Chat room messages shall be delivered in real-time with minimal latency, ensuring seamless communication among farmers.
 
-### 3.2 Reliability
+### 4.2 Reliability
 1. The application shall have an uptime of at least 99%, with regular maintenance and updates to minimize downtime.
 2. Data loss shall be minimized through automatic backups and synchronization with cloud storage.
 3. The language must be simple and understandable as the major target audience are farmers and they may not have had access to scientific agricultural education.
 
-### 3.3 Usability
+### 4.3 Usability
 1. The UI must be intuitive and easy to navigate, with clear visual cues and minimal text-based instructions.
 2. User interactions shall be optimized for touch screens, with large touch targets and gesture-based controls.
 3. Have many tootips to ensure user never feels helpless and can always find out what each feature does.
 
-### 3.4 Security
+### 4.4 Security
 1. User data shall be encrypted both in transit and at rest, with strict access controls to protect sensitive information.
 2. The application shall undergo regular security audits and penetration testing to identify and address potential vulnerabilities.
 
-### 3.5 Scalability
+### 4.5 Scalability
 1. The application shall support a growing user base without compromising performance, with scalable infrastructure and load balancing capabilities.
 2. Backend systems shall be designed to handle large volumes of data and user requests, with horizontal scaling options for future expansion.
 
-### 3.6 Data Quality and Volume
+### 4.6 Data Quality and Volume
 1. The application shall require good quality and large volumes of data to ensure accuracy and reliability in machine learning models used for autopilot farming and disease detection.
 2. Data collection mechanisms shall be designed to capture a wide range of environmental and agronomic variables, ensuring robustness and generalizability of predictive models.
 
-## 4. Constraints
+## 5. Constraints
 
 - The application shall be compatible with modern web browsers (Chrome, Firefox, Safari) and mobile devices running iOS and Android operating systems.
 - Development shall adhere to budget and time constraints specified by stakeholders.
 
-## 5. Appendices
+## 6. Appendices
 
 ### Appendix A: Glossary
 - Dashboard: The main interface of the application displaying relevant information and features.
